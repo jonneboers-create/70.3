@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub Pages — Instructies</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;max-width:640px;margin:0 auto;padding:2rem 1.5rem 4rem;background:#fff;color:#1a1a1a;line-height:1.6;}
+h1{font-size:22px;font-weight:700;margin-bottom:6px;color:#111;}
+.subtitle{font-size:14px;color:#666;margin-bottom:2.5rem;}
+h2{font-size:16px;font-weight:600;margin:2rem 0 0.75rem;color:#111;}
+.step{counter-increment:step;display:flex;gap:16px;margin-bottom:1.5rem;align-items:flex-start;}
+.step-num{width:32px;height:32px;border-radius:50%;background:#0d0f0e;color:#4ade80;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.step-body{flex:1;}
+.step-title{font-weight:600;font-size:15px;margin-bottom:4px;}
+.step-desc{font-size:14px;color:#444;line-height:1.6;}
+.step-desc strong{color:#111;}
+code{background:#f0f0f0;padding:2px 6px;border-radius:4px;font-size:13px;font-family:"SF Mono","Menlo","Consolas",monospace;}
+.url-box{background:#f8f8f8;border:1.5px solid #e0e0e0;border-radius:10px;padding:12px 16px;margin:8px 0;font-family:"SF Mono","Menlo","Consolas",monospace;font-size:13px;color:#0066cc;word-break:break-all;}
+.tip{background:#f0fdf4;border-left:3px solid #4ade80;padding:10px 14px;border-radius:0 8px 8px 0;font-size:13px;color:#166534;margin:12px 0;}
+.warn{background:#fffbeb;border-left:3px solid #f59e0b;padding:10px 14px;border-radius:0 8px 8px 0;font-size:13px;color:#92400e;margin:12px 0;}
+.file-list{background:#f8f8f8;border-radius:10px;padding:14px 16px;margin:10px 0;}
+.file-item{display:flex;align-items:center;gap:10px;padding:5px 0;font-size:13px;border-bottom:1px solid #eee;}
+.file-item:last-child{border-bottom:none;}
+.file-icon{font-size:16px;width:24px;flex-shrink:0;}
+.file-name{font-family:"SF Mono","Menlo","Consolas",monospace;color:#333;}
+.file-desc{color:#888;margin-left:auto;font-size:12px;}
+.divider{border:none;border-top:1px solid #eee;margin:2rem 0;}
+.ios-step, .android-step{display:flex;gap:12px;margin-bottom:10px;font-size:14px;align-items:flex-start;}
+.ios-num{width:22px;height:22px;border-radius:50%;background:#007AFF;color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.and-num{width:22px;height:22px;border-radius:50%;background:#34A853;color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.platform{font-size:13px;font-weight:600;margin:1rem 0 0.5rem;color:#555;}
+footer{font-size:12px;color:#aaa;text-align:center;margin-top:3rem;padding-top:1rem;border-top:1px solid #eee;}
+</style>
+</head>
+<body>
+
+<h1>&#128640; Race Day app online zetten</h1>
+<div class="subtitle">GitHub Pages — gratis, binnen 10 minuten live</div>
+
+<h2>Wat heb je nodig</h2>
+<div class="tip">Alleen een gratis GitHub account. Geen technische kennis vereist. De link werkt op elke telefoon — ook offline na het eerste bezoek.</div>
+
+<h2>Bestanden die je hebt ontvangen</h2>
+<div class="file-list">
+  <div class="file-item"><div class="file-icon">&#128196;</div><div class="file-name">703_splits_calculator.html</div><div class="file-desc">De app zelf</div></div>
+  <div class="file-item"><div class="file-icon">&#128196;</div><div class="file-name">manifest.json</div><div class="file-desc">App-instellingen</div></div>
+  <div class="file-item"><div class="file-icon">&#128196;</div><div class="file-name">sw.js</div><div class="file-desc">Offline support</div></div>
+  <div class="file-item"><div class="file-icon">&#128196;</div><div class="file-name">IRONMAN_703_Westfriesland_2026_AthleteGuide.pdf</div><div class="file-desc">Reglement PDF</div></div>
+  <div class="file-item"><div class="file-icon">&#128196;</div><div class="file-name">IMWFL26_fietsroute.pdf</div><div class="file-desc">Fietsroute kaart</div></div>
+  <div class="file-item"><div class="file-icon">&#128196;</div><div class="file-name">IMWFL26_looproute.pdf</div><div class="file-desc">Looproute kaart</div></div>
+</div>
+<div class="warn">&#9888;&#65039; Upload <strong>alle zes bestanden</strong>. De app werkt alleen goed als ze allemaal aanwezig zijn.</div>
+
+<hr class="divider">
+
+<h2>Stap voor stap</h2>
+
+<div class="step">
+  <div class="step-num">1</div>
+  <div class="step-body">
+    <div class="step-title">Maak een gratis GitHub account</div>
+    <div class="step-desc">Ga naar <strong>github.com</strong> en klik op <strong>Sign up</strong>. Kies een gebruikersnaam — die wordt onderdeel van je link, dus kies iets als <code>jonne-race</code> of je eigen naam.</div>
+    <div class="url-box">https://github.com/signup</div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-num">2</div>
+  <div class="step-body">
+    <div class="step-title">Maak een nieuw repository aan</div>
+    <div class="step-desc">
+      Na inloggen klik je rechtsboven op het <strong>+</strong> icoon → <strong>New repository</strong>.<br><br>
+      Vul in:<br>
+      &bull; <strong>Repository name:</strong> <code>race-day</code><br>
+      &bull; Zet op <strong>Public</strong> (verplicht voor gratis hosting)<br>
+      &bull; Vink aan: <strong>Add a README file</strong><br><br>
+      Klik <strong>Create repository</strong>.
+    </div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-num">3</div>
+  <div class="step-body">
+    <div class="step-title">Upload alle bestanden</div>
+    <div class="step-desc">
+      In je nieuwe repository klik je op <strong>Add file</strong> → <strong>Upload files</strong>.<br><br>
+      Sleep alle zes bestanden tegelijk naar het uploadvenster. Wacht tot alle bestanden zijn geüpload (de grote PDFs kunnen even duren).<br><br>
+      Klik onderaan op <strong>Commit changes</strong>.
+    </div>
+    <div class="tip">&#128161; Sleep ze allemaal tegelijk — dan hoef je maar één keer op Commit te klikken.</div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-num">4</div>
+  <div class="step-body">
+    <div class="step-title">Zet GitHub Pages aan</div>
+    <div class="step-desc">
+      Ga naar <strong>Settings</strong> (tabblad bovenaan in je repository).<br><br>
+      Scroll naar <strong>Pages</strong> in het linkermenu.<br><br>
+      Onder <strong>Source</strong>: kies <strong>Deploy from a branch</strong>.<br>
+      Onder <strong>Branch</strong>: kies <strong>main</strong> en map <strong>/ (root)</strong>.<br><br>
+      Klik <strong>Save</strong>.
+    </div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-num">5</div>
+  <div class="step-body">
+    <div class="step-title">Wacht 1-2 minuten — dan is je link klaar</div>
+    <div class="step-desc">
+      Ververs de Settings → Pages pagina. Je link verschijnt bovenaan als het klaar is:
+    </div>
+    <div class="url-box">https://JOUWGEBRUIKERSNAAM.github.io/race-day/703_splits_calculator.html</div>
+    <div class="tip">&#9989; Stuur deze link via WhatsApp naar de familie. Ze hoeven niets te installeren — gewoon openen in de browser.</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<h2>&#128241; Als app op het beginscherm zetten</h2>
+
+<p style="font-size:14px;color:#444;margin-bottom:1rem;">Zo ziet het eruit als een echte app — zonder App Store:</p>
+
+<div class="platform">&#63743; iPhone / iPad (Safari)</div>
+<div class="ios-step"><div class="ios-num">1</div><div>Open de link in <strong>Safari</strong> (niet Chrome of Firefox)</div></div>
+<div class="ios-step"><div class="ios-num">2</div><div>Tik op het <strong>Delen</strong> icoon onderaan (vierkantje met pijl omhoog)</div></div>
+<div class="ios-step"><div class="ios-num">3</div><div>Scroll naar beneden en tik op <strong>Zet op beginscherm</strong></div></div>
+<div class="ios-step"><div class="ios-num">4</div><div>Geef het een naam zoals <strong>Race Day</strong> en tik op <strong>Voeg toe</strong></div></div>
+
+<div class="platform">&#129504; Android (Chrome)</div>
+<div class="android-step"><div class="and-num">1</div><div>Open de link in <strong>Chrome</strong></div></div>
+<div class="android-step"><div class="and-num">2</div><div>Tik op de drie puntjes rechtsboven</div></div>
+<div class="android-step"><div class="and-num">3</div><div>Tik op <strong>Toevoegen aan beginscherm</strong></div></div>
+<div class="android-step"><div class="and-num">4</div><div>Tik op <strong>Toevoegen</strong></div></div>
+
+<div class="tip">&#127760; Na het eerste bezoek werkt de app ook <strong>zonder internet</strong>. Perfect op de racedag als het netwerk druk is.</div>
+
+<hr class="divider">
+
+<h2>&#128221; Als je later iets wilt aanpassen</h2>
+<div class="step">
+  <div class="step-num"></div>
+  <div class="step-body">
+    <div class="step-desc">Ga naar je repository op github.com, klik op het bestand dat je wilt wijzigen, klik op het potlood-icoon om te bewerken, en klik op <strong>Commit changes</strong>. De wijziging is binnen 1 minuut live.</div>
+  </div>
+</div>
+
+<footer>Gemaakt voor IM 70.3 Westfriesland 2026 &middot; Jonne</footer>
+
+</body>
+</html>
